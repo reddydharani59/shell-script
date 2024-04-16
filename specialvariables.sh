@@ -7,4 +7,4 @@ echo "Home directory of current user : $HOME"
 echo "which user running htis: $USER"
 echo "Host Name : $HOSTNAME"
 echo "Proccess id of this script: $$"
-sleep 60 
+sleep 60 &
