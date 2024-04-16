@@ -5,4 +5,4 @@ MOVIES=("mirchi,bahubali,bahubali2,pushpa,pushpa2")
 #list starts always with zero
 
 echo "First Movie is :" ${MOVIES[0]}
-echo "Third Movie IS :" ${movies[3]}
+echo "Third Movie IS :" ${MOVIES[3]}
