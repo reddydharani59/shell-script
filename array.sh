@@ -4,5 +4,5 @@ MOVIES=("mirchi,bahubali,bahubali2,pushpa,pushpa2")
 #index always starts with 0
 #list starts always with zero
 
-echo "First Movie is :" ${MOVIES[0]}
-echo "Third Movie IS :" ${MOVIES[3]}
+echo "First Movie is : ${MOVIES[0]}"
+echo "Third Movie IS : ${MOVIES[3]}"
