@@ -6,3 +6,4 @@ MOVIES=("mirchi" "bahubali" "bahubali2" "pushpa" "pushpa2")
 
 echo "First Movie is : ${MOVIES[0]}"
 echo "Third Movie IS : ${MOVIES[2]}"
+echo "All Movies are : ${MOVIES[@]}"
