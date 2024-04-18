@@ -14,11 +14,12 @@ VALIDATE()
     fi
 }
  if [ $USER -ne 0]
- then
- echo "please run the script with sudo access"
- exit 1
+  then
+      echo "please run the script with sudo access"
+       exit 1
  else
- echo "you are super user"
+      echo "you are super user"
+ fi
 
  dnf install mysql-server -y  &>> $LOGFILE
  VALIDATE $? "Intializing Mysql-server"
