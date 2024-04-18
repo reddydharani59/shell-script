@@ -9,5 +9,5 @@ then
     exit 1 
 
 else 
-    echo -e "$2....$G success, $y you are super user"
+    echo -e "$2....$G success, $Y you are super user"
 fi 
