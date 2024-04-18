@@ -20,7 +20,8 @@ VALIDATE()
  else
  echo "you are super user"
 
- dnf install mysql-server -y >> $LOGFILE
+ dnf install mysql-server -y  &>> $LOGFILE
  VALIDATE $? "Intializing Mysql-server"
- dnf install git -y >> $LOGFILE
+ dnf install git -y &>> $LOGFILE
  VALIDATE $? "Intializing git"
+
