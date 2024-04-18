@@ -10,7 +10,7 @@ VALIDATE()
     then 
     echo "$2....Failure"
     else
-    echo "2 success"
+    echo "$2 success"
     fi
 }
  if [ $USER -ne 0 ]
