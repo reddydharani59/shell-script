@@ -13,7 +13,7 @@ VALIDATE()
     echo "2 success"
     fi
 }
- if [ $USER -ne 0]
+ if [ $USER -ne 0 ]
   then
       echo "please run the script with sudo access"
        exit 1
