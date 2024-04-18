@@ -1,7 +1,7 @@
 #!/bin/bash
 R="\e[31m"
 G="\e[32m"
-Y="\e[33m"
+Y="\e[34m"
 USER=$(id -u)
 if [ $USER -ne 0 ]
 then 
