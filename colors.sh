@@ -2,7 +2,7 @@
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-USER=${id -u}
+USER=$(id -u)
 if [ $USER -ne 0 ]
 then 
     echo -e " ...$R you won't have access"
