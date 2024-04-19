@@ -12,13 +12,7 @@ else
     echo "get super user access"
     exit 1
 fi
-for i in $@
-do 
-echo "package to insatll is : $i"
-dnf install $i -y &>>$LOGFILE
-VALIDATE $? "Installing ...$i"
-done
-VALIDATE()
+VALIDATE ()
 {
     if [ $1 -nt 0 ] 
     then 
@@ -29,6 +23,13 @@ VALIDATE()
      fi
 
 }
+for i in $@
+do 
+echo "package to insatll is : $i"
+dnf install $i -y &>>$LOGFILE
+VALIDATE $? "Installing ...$i"
+done
+
  
 
 
