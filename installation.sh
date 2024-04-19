@@ -4,17 +4,18 @@ R="\e[31m"
 Y="\e[33m"
 SCRIPTNAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPTNAME.log
-if [ $USER -nt 0 ] 
+if [ $USER -eq 0 ] 
 then
+    echo "your super user access"
+    
+else
     echo "get super user access"
     exit 1
-else
-    echo "you have access"
 fi
 for i in $@
 do 
 echo "package to insatll is : $i"
-dnf install $i -y @>> $LOGFILE
+dnf install $i -y @>>$LOGFILE
 VALIDATE $? "Installing ...$i"
 done
 VALIDATE()
