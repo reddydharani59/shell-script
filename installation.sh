@@ -16,6 +16,7 @@ do
 echo "package to insatll is : $i"
 dnf install $i -y @>> $LOGFILE
 VALIDATE $? "Installing ...$i"
+done
 VALIDATE()
 {
     if [ $1 -nt 0 ] 
@@ -27,7 +28,7 @@ VALIDATE()
      fi
 
 }
- done
+ 
 
 
 
