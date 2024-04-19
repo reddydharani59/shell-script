@@ -15,7 +15,7 @@ fi
 for i in $@
 do 
 echo "package to insatll is : $i"
-dnf install $i -y @>>$LOGFILE
+dnf install $i -y &>>$LOGFILE
 VALIDATE $? "Installing ...$i"
 done
 VALIDATE()
