@@ -4,7 +4,7 @@ R="\e[31m"
 Y="\e[33m"
 SCRIPTNAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPTNAME.log
-if[ $USER -nt 0]
+if[ $USER -nt 0 ] 
 then
     echo "get super user access"
     exit 1
