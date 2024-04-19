@@ -2,8 +2,9 @@
 USER=$(id -u)
 R="\e[31m"
 Y="\e[33m"
+TIMESTAMP=$(date.+%F+%H-%M-%S)
 SCRIPTNAME=$(echo $0 | cut -d "." -f1)
-LOGFILE=/tmp/$SCRIPTNAME.log
+LOGFILE=/tmp/$SCRIPTNAME.$TIMESTAMP.log
 if [ $USER -eq 0 ] 
 then
     echo "your super user access"
