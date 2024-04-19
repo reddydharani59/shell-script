@@ -13,7 +13,7 @@ else
 fi
 for i in $@
 do 
-package to insatll is : $i
+echo "package to insatll is : $i"
 dnf install $i -y @>> LOGFILE
 VALIDATE $? "Installing ...$i"
 VALIDATE()
