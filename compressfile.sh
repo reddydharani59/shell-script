@@ -6,7 +6,7 @@ read SOURCE_FILE
 echo "please enter destination directory"
 read DESTINATION_FOLDER
 #SOURCE_FILE=/home/ec2-user/shell-script/text.txt
-tar cfz "$BACKUP_FILE.tar.gz" "$SOURCE_FILE"
+FILE=$(tar cfz "$BACKUP_FILE.tar.gz" "$SOURCE_FILE")
 
-cp -rf "$BBACKUP_FILE.tar.gz" "$DESTINATION_FOLDER" 
+cp -rf "$FILE" "$DESTINATION_FOLDER" 
 echo " FILE COMPRESSED "
