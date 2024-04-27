@@ -9,3 +9,6 @@ backup_file="backup_$date.tar.gz"
   tar -cvzf "$backup_file" "$source_dir"
   echo $?
   cp -rp "$backup_file" "$destination_dir"
+    echo $?
+    echo "backup filecompressed succefully"
+    
