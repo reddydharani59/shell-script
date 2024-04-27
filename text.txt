@@ -1,4 +1,0 @@
-#!/bin/bash
-hi hello
-hoe wrwdoinjbfkgbvjfdb
-db

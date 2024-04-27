@@ -11,3 +11,9 @@ backup_file="backup_$TIMESTAMP.tar.gz"
   cp -rp "$backup_file.tar.gz" "$destination_dir"
     echo $?
     echo "backup filecompressed succefully"
+
+#tar -cvfz 
+#here c is creates new archieve file
+#here z is through zip
+#here f is specifies the archieve file name
+#here v is shows the files being processed by archieve
