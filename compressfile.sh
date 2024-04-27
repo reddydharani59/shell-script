@@ -1,6 +1,6 @@
 #!/bin/bash
-date=$(date +%f-"%d%m%y")
-backup_file="backup_$date.tar.gz"
+TIMESTAMP=$(date +%F-%H-%M-%S)
+backup_file="backup_$TIMESTAMP.tar.gz"
  echo "enter source directory"
  read source_dir
  echo "enter destination directory"
