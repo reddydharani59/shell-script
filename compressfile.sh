@@ -7,4 +7,5 @@ backup_file="backup_$date.tar.gz"
  read destination_dir
   
   tar -cvzf "$backup_file" "$source_dir"
+  echo $?
   cp -rp "$backup_file" "$destination_dir"
