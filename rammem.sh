@@ -8,6 +8,6 @@ USED_MEM=$(free -m | grep Mem: | awk -F " " '{print $3}')
  TOTAL_SWAP=$(free -m | grep Swap: | awk -F " " '{print $2}')
 
 USED_SWAP=$(free -m | grep Swap: | awk -F " " '{print $3}')
- echo "Total memory in swap is: $TOTAL_SWAP and used SWAp: $SWAP_SWAP"
+ echo "Total memory in swap is: $TOTAL_SWAP and used SWAp: $USED_SWAP"
 
  
