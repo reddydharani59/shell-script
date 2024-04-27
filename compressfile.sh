@@ -1,12 +1,10 @@
 #!/bin/bash
-TIMESTAMP=$(date +%F-%H-%M-S)
-
-echo "please enter source file"
-read SOURCE_FILE
-echo "please enter destination directory"
-read DESTINATION_FOLDER
-#SOURCE_FILE=/home/ec2-user/shell-script/text.txt
-tar cfz "$BACKUP_FILE.tar.gz" "$SOURCE_FILE"
-
-cp -rf "/home/ec2-user/sourcedir/$BACKUP_FILE.tar.gz" "/home/ec2-user/destdir/" 
-echo " FILE COMPRESSED "
+date=$(date +"%d%m%y")
+backup_file="backup_$date.tar.gz"
+ echo "enter source directory"
+ read source_dir
+ echo "enter destination directory"
+ read destination_dir
+  
+  tar -cvzf "$backup_file" "$source_dir"
+  cp -rp "$backup_file" "$destination_dir"
