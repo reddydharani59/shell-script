@@ -1,6 +1,6 @@
 #!/bin/bash
 RAM_USAGE=$(free -m)
-while IFS=read -r line
+while IFS= read -r line
 do
 TOTAL_MEM=$(echo $line | grep Mem: | awk -F " " '{print $2}')
 
