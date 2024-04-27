@@ -1,7 +1,7 @@
 #!/bin/bash
 COL=""
 ROW=""
-DATA="'
+DATA=""
 while IFS=' ' read -r fields 
 do
 COL+=("{fields[0]}")
