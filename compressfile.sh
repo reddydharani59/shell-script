@@ -6,9 +6,8 @@ backup_file="backup_$date.tar.gz"
  echo "enter destination directory"
  read destination_dir
   
-  tar -cvzf "$backup_file" "$source_dir"
+  tar -cvzf "$source_dir.tar.gz" "$source_dir"
   echo $?
-  cp -rp "$backup_file" "$destination_dir"
+  cp -rp "$source_dir.tar.gz" "$destination_dir"
     echo $?
     echo "backup filecompressed succefully"
-    
