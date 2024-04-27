@@ -7,4 +7,4 @@ TOTAL_MEM=$(echo $line | grep Mem: | awk -F " " '{print $2}')
 USED_MEM=$(echo $line | grep Mem: | awk -F " " '{print $3}')
  echo "Total memory is : $Total_MEM and used $USED_MEM"
 
- done <<< RAM_USAGE
+ done <<< $RAM_USAGE
